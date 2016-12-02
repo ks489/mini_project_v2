@@ -7,6 +7,8 @@ import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
+import org.eclipse.xtext.naming.IQualifiedNameProvider
+import com.google.inject.Inject
 
 /**
  * Generates code from your model files on save.
@@ -14,7 +16,22 @@ import org.eclipse.xtext.generator.IGeneratorContext
  * See https://www.eclipse.org/Xtext/documentation/303_runtime_concepts.html#code-generation
  */
 class BlogPostDSLGenerator extends AbstractGenerator {
+	
+	@Inject extension IQualifiedNameProvider
+	
+	def compile() ''' 
+        «IF 1 != 1»
 
+        «ENDIF»
+    '''
+	
+	override afterGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
+		//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
+	
+	override beforeGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
+//		throw new UnsupportedOperationException("TODO: auto-generated method stub")
+	}
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
 //		fsa.generateFile('greetings.txt', 'People to greet: ' + 
 //			resource.allContents

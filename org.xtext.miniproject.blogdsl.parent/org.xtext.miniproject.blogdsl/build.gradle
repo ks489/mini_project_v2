@@ -29,3 +29,12 @@ task generateXtextLanguage(type: JavaExec) {
 generateXtext.dependsOn(generateXtextLanguage)
 clean.dependsOn(cleanGenerateXtextLanguage)
 eclipse.classpath.plusConfigurations += [configurations.mwe2]
+
+// generating code
+// ../gradlew compileModel -Pmodel=build/test.dmodel
+task compileModel(dependsOn: 'classes', type: JavaExec) {
+	main = 'org.example.domainmodel.generator.Main'
+	//main = 'org.xtext.miniproject/blogdsl.domainmodel.generator.Main'	
+	classpath = sourceSets.main.runtimeClasspath
+	args model
+}

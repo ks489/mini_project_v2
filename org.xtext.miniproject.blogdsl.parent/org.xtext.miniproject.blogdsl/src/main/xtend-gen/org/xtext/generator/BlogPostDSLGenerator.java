@@ -3,10 +3,14 @@
  */
 package org.xtext.generator;
 
+import com.google.inject.Inject;
 import org.eclipse.emf.ecore.resource.Resource;
+import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.AbstractGenerator;
 import org.eclipse.xtext.generator.IFileSystemAccess2;
 import org.eclipse.xtext.generator.IGeneratorContext;
+import org.eclipse.xtext.naming.IQualifiedNameProvider;
+import org.eclipse.xtext.xbase.lib.Extension;
 
 /**
  * Generates code from your model files on save.
@@ -15,6 +19,28 @@ import org.eclipse.xtext.generator.IGeneratorContext;
  */
 @SuppressWarnings("all")
 public class BlogPostDSLGenerator extends AbstractGenerator {
+  @Inject
+  @Extension
+  private IQualifiedNameProvider _iQualifiedNameProvider;
+  
+  public CharSequence compile() {
+    StringConcatenation _builder = new StringConcatenation();
+    _builder.append("�IF 1 != 1�");
+    _builder.newLine();
+    _builder.newLine();
+    _builder.append("�ENDIF�");
+    _builder.newLine();
+    return _builder;
+  }
+  
+  @Override
+  public void afterGenerate(final Resource input, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
+  }
+  
+  @Override
+  public void beforeGenerate(final Resource input, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
+  }
+  
   @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
   }
