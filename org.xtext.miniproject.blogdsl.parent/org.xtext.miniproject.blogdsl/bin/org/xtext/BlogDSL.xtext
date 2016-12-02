@@ -1,0 +1,62 @@
+grammar org.xtext.BlogPostDSL with org.eclipse.xtext.common.Terminals
+
+generate blogPostDSL "http://www.xtext.org/BlogPostDSL"
+
+//Model:
+//	greetings+=Greeting*;
+	
+//Greeting:
+//	'Hello' name=ID '!!';
+
+//Domainmodel:
+	//(tagImport = TagImport)* (itemElement = Article)+ (itemElement = Blog)+;
+
+Domainmodel:
+	(tagImport = TagImport)* (itemElement = ItemElement)+;
+
+ItemElement:
+	Blog | Article ;
+
+
+Blog:
+	'blog {' declaration=ElementDeclaration '}';
+	
+Article:
+	'articles {' declaration=ElementDeclaration '}';
+
+ElementDeclaration:
+	(Title)(',' date=Date)? (',' tag=Tags)?
+;
+
+TagImport:
+	'tag 'Tag;
+
+Tag:
+	name=ID;
+	
+Title:
+	'title=' name=TitleID;
+	
+Date:
+	'date=' name=BLOGDATE;
+
+Tags:
+	'tags=['(name=[Tag])(',' name=[Tag])* ']';
+
+	
+
+TitleID:
+	titleid+=(ALPHANUMERIC)+
+;
+
+/*terminal ALPHANUMERICDASH:	
+		('-')ALPHANUMERIC+;
+		
+terminal ALPHANUMBERICNODASH:
+	ALPHANUMERIC; */
+	
+terminal ALPHANUMERIC:
+		('0'..'9' | 'A'..'Z' | 'a'..'z')+('-')('0'..'9' | 'A'..'Z' | 'a'..'z')+;
+	
+terminal BLOGDATE:
+	('0'..'9')('0'..'9')('0'..'9')('0'..'9')('-')('0'..'9')('0'..'9')('-')('0'..'9')('0'..'9');
