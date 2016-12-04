@@ -38,3 +38,31 @@ task compileModel(dependsOn: 'classes', type: JavaExec) {
 	classpath = sourceSets.main.runtimeClasspath
 	args model
 }
+
+//def sourceDirectory = ""
+//def destinationDirectory = ""
+
+task publish(dependsOn: [compileModel]) {
+	//def sourceDirectory = "src-gen"
+	//def destinationDirectory = "website/jekyll-website/_posts/blog"
+	
+	def sourceDirectory = ""
+	def destinationDirectory = "testmove"
+	
+	FileTree tree = fileTree(dir: '.')
+
+	tree.include '*/*' + title + '.md'
+	def count = 0
+	tree.each {File localfile ->  
+		copy {
+	        from '.' + sourceDirectory
+	        into './' + destinationDirectory
+	        include { details -> details.file.name.endsWith('.md') && details.file.name.contains(localfile.name) }
+	        doLast{
+		    	println "the file " + sourceDirectory + '/' + localfile.name + " from the project " + project.name + " is deleted"
+		    	println "a new file " + destinationDirectory + '/' + localfile.name + " is created with the contents of " + sourceDirectory + '/' + localfile.name	
+	    	}
+	    } 
+	} 
+}
+
