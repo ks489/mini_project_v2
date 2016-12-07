@@ -32,133 +32,128 @@ import org.xtext.blogPostDSL.TitleID;
 public class TitleIDImpl extends MinimalEObjectImpl.Container implements TitleID
 {
   /**
-   * The cached value of the '{@link #getTitleid() <em>Titleid</em>}' attribute list.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTitleid() <em>Titleid</em>}' attribute list.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTitleid()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTitleid()
+	 * @generated
+	 * @ordered
+	 */
   protected EList<String> titleid;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TitleIDImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.TITLE_ID;
-  }
+		return BlogPostDSLPackage.Literals.TITLE_ID;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public EList<String> getTitleid()
   {
-    if (titleid == null)
-    {
-      titleid = new EDataTypeEList<String>(String.class, this, BlogPostDSLPackage.TITLE_ID__TITLEID);
-    }
-    return titleid;
-  }
+		if (titleid == null) {
+			titleid = new EDataTypeEList<String>(String.class, this, BlogPostDSLPackage.TITLE_ID__TITLEID);
+		}
+		return titleid;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE_ID__TITLEID:
-        return getTitleid();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE_ID__TITLEID:
+				return getTitleid();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @SuppressWarnings("unchecked")
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE_ID__TITLEID:
-        getTitleid().clear();
-        getTitleid().addAll((Collection<? extends String>)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE_ID__TITLEID:
+				getTitleid().clear();
+				getTitleid().addAll((Collection<? extends String>)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE_ID__TITLEID:
-        getTitleid().clear();
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE_ID__TITLEID:
+				getTitleid().clear();
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE_ID__TITLEID:
-        return titleid != null && !titleid.isEmpty();
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE_ID__TITLEID:
+				return titleid != null && !titleid.isEmpty();
+		}
+		return super.eIsSet(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public String toString()
   {
-    if (eIsProxy()) return super.toString();
+		if (eIsProxy()) return super.toString();
 
-    StringBuffer result = new StringBuffer(super.toString());
-    result.append(" (titleid: ");
-    result.append(titleid);
-    result.append(')');
-    return result.toString();
-  }
+		StringBuffer result = new StringBuffer(super.toString());
+		result.append(" (titleid: ");
+		result.append(titleid);
+		result.append(')');
+		return result.toString();
+	}
 
 } //TitleIDImpl

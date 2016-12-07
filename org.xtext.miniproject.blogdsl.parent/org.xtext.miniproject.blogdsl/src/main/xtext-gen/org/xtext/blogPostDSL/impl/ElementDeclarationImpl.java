@@ -20,24 +20,24 @@ import org.xtext.blogPostDSL.ElementDeclaration;
 public class ElementDeclarationImpl extends MinimalEObjectImpl.Container implements ElementDeclaration
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ElementDeclarationImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.ELEMENT_DECLARATION;
-  }
+		return BlogPostDSLPackage.Literals.ELEMENT_DECLARATION;
+	}
 
 } //ElementDeclarationImpl

@@ -25,55 +25,55 @@ import org.eclipse.emf.ecore.EObject;
 public interface Domainmodel extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Tag Import</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Tag Import</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Tag Import</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Tag Import</em>' containment reference.
-   * @see #setTagImport(TagImport)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getDomainmodel_TagImport()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Tag Import</em>' containment reference.
+	 * @see #setTagImport(TagImport)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getDomainmodel_TagImport()
+	 * @model containment="true"
+	 * @generated
+	 */
   TagImport getTagImport();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Domainmodel#getTagImport <em>Tag Import</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Domainmodel#getTagImport <em>Tag Import</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Tag Import</em>' containment reference.
-   * @see #getTagImport()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Tag Import</em>' containment reference.
+	 * @see #getTagImport()
+	 * @generated
+	 */
   void setTagImport(TagImport value);
 
   /**
-   * Returns the value of the '<em><b>Item Element</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Item Element</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Item Element</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Item Element</em>' containment reference.
-   * @see #setItemElement(ItemElement)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getDomainmodel_ItemElement()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Item Element</em>' containment reference.
+	 * @see #setItemElement(ItemElement)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getDomainmodel_ItemElement()
+	 * @model containment="true"
+	 * @generated
+	 */
   ItemElement getItemElement();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Domainmodel#getItemElement <em>Item Element</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Domainmodel#getItemElement <em>Item Element</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Item Element</em>' containment reference.
-   * @see #getItemElement()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Item Element</em>' containment reference.
+	 * @see #getItemElement()
+	 * @generated
+	 */
   void setItemElement(ItemElement value);
 
 } // Domainmodel

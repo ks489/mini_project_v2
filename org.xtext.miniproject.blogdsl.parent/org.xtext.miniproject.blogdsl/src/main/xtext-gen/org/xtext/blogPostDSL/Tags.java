@@ -24,29 +24,29 @@ import org.eclipse.emf.ecore.EObject;
 public interface Tags extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Name</b></em>' reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' reference.
-   * @see #setName(Tag)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTags_Name()
-   * @model
-   * @generated
-   */
+	 * @return the value of the '<em>Name</em>' reference.
+	 * @see #setName(Tag)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTags_Name()
+	 * @model
+	 * @generated
+	 */
   Tag getName();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Tags#getName <em>Name</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Tags#getName <em>Name</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' reference.
-   * @see #getName()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Name</em>' reference.
+	 * @see #getName()
+	 * @generated
+	 */
   void setName(Tag value);
 
 } // Tags

@@ -32,164 +32,157 @@ import org.xtext.blogPostDSL.ItemElement;
 public class ItemElementImpl extends MinimalEObjectImpl.Container implements ItemElement
 {
   /**
-   * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDeclaration() <em>Declaration</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDeclaration()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDeclaration()
+	 * @generated
+	 * @ordered
+	 */
   protected ElementDeclaration declaration;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ItemElementImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.ITEM_ELEMENT;
-  }
+		return BlogPostDSLPackage.Literals.ITEM_ELEMENT;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ElementDeclaration getDeclaration()
   {
-    return declaration;
-  }
+		return declaration;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetDeclaration(ElementDeclaration newDeclaration, NotificationChain msgs)
   {
-    ElementDeclaration oldDeclaration = declaration;
-    declaration = newDeclaration;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, oldDeclaration, newDeclaration);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		ElementDeclaration oldDeclaration = declaration;
+		declaration = newDeclaration;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, oldDeclaration, newDeclaration);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDeclaration(ElementDeclaration newDeclaration)
   {
-    if (newDeclaration != declaration)
-    {
-      NotificationChain msgs = null;
-      if (declaration != null)
-        msgs = ((InternalEObject)declaration).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, null, msgs);
-      if (newDeclaration != null)
-        msgs = ((InternalEObject)newDeclaration).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, null, msgs);
-      msgs = basicSetDeclaration(newDeclaration, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, newDeclaration, newDeclaration));
-  }
+		if (newDeclaration != declaration) {
+			NotificationChain msgs = null;
+			if (declaration != null)
+				msgs = ((InternalEObject)declaration).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, null, msgs);
+			if (newDeclaration != null)
+				msgs = ((InternalEObject)newDeclaration).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, null, msgs);
+			msgs = basicSetDeclaration(newDeclaration, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION, newDeclaration, newDeclaration));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
-        return basicSetDeclaration(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
+				return basicSetDeclaration(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
-        return getDeclaration();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
+				return getDeclaration();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
-        setDeclaration((ElementDeclaration)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
+				setDeclaration((ElementDeclaration)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
-        setDeclaration((ElementDeclaration)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
+				setDeclaration((ElementDeclaration)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
-        return declaration != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.ITEM_ELEMENT__DECLARATION:
+				return declaration != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //ItemElementImpl

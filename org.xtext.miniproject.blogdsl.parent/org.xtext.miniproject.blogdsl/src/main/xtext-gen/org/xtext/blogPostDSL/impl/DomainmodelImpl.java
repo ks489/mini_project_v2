@@ -34,234 +34,225 @@ import org.xtext.blogPostDSL.TagImport;
 public class DomainmodelImpl extends MinimalEObjectImpl.Container implements Domainmodel
 {
   /**
-   * The cached value of the '{@link #getTagImport() <em>Tag Import</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTagImport() <em>Tag Import</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTagImport()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTagImport()
+	 * @generated
+	 * @ordered
+	 */
   protected TagImport tagImport;
 
   /**
-   * The cached value of the '{@link #getItemElement() <em>Item Element</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getItemElement() <em>Item Element</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getItemElement()
-   * @generated
-   * @ordered
-   */
+	 * @see #getItemElement()
+	 * @generated
+	 * @ordered
+	 */
   protected ItemElement itemElement;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected DomainmodelImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.DOMAINMODEL;
-  }
+		return BlogPostDSLPackage.Literals.DOMAINMODEL;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TagImport getTagImport()
   {
-    return tagImport;
-  }
+		return tagImport;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetTagImport(TagImport newTagImport, NotificationChain msgs)
   {
-    TagImport oldTagImport = tagImport;
-    tagImport = newTagImport;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, oldTagImport, newTagImport);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		TagImport oldTagImport = tagImport;
+		tagImport = newTagImport;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, oldTagImport, newTagImport);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setTagImport(TagImport newTagImport)
   {
-    if (newTagImport != tagImport)
-    {
-      NotificationChain msgs = null;
-      if (tagImport != null)
-        msgs = ((InternalEObject)tagImport).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, null, msgs);
-      if (newTagImport != null)
-        msgs = ((InternalEObject)newTagImport).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, null, msgs);
-      msgs = basicSetTagImport(newTagImport, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, newTagImport, newTagImport));
-  }
+		if (newTagImport != tagImport) {
+			NotificationChain msgs = null;
+			if (tagImport != null)
+				msgs = ((InternalEObject)tagImport).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, null, msgs);
+			if (newTagImport != null)
+				msgs = ((InternalEObject)newTagImport).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, null, msgs);
+			msgs = basicSetTagImport(newTagImport, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT, newTagImport, newTagImport));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ItemElement getItemElement()
   {
-    return itemElement;
-  }
+		return itemElement;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetItemElement(ItemElement newItemElement, NotificationChain msgs)
   {
-    ItemElement oldItemElement = itemElement;
-    itemElement = newItemElement;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, oldItemElement, newItemElement);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		ItemElement oldItemElement = itemElement;
+		itemElement = newItemElement;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, oldItemElement, newItemElement);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setItemElement(ItemElement newItemElement)
   {
-    if (newItemElement != itemElement)
-    {
-      NotificationChain msgs = null;
-      if (itemElement != null)
-        msgs = ((InternalEObject)itemElement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, null, msgs);
-      if (newItemElement != null)
-        msgs = ((InternalEObject)newItemElement).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, null, msgs);
-      msgs = basicSetItemElement(newItemElement, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, newItemElement, newItemElement));
-  }
+		if (newItemElement != itemElement) {
+			NotificationChain msgs = null;
+			if (itemElement != null)
+				msgs = ((InternalEObject)itemElement).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, null, msgs);
+			if (newItemElement != null)
+				msgs = ((InternalEObject)newItemElement).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, null, msgs);
+			msgs = basicSetItemElement(newItemElement, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT, newItemElement, newItemElement));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
-        return basicSetTagImport(null, msgs);
-      case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
-        return basicSetItemElement(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
+				return basicSetTagImport(null, msgs);
+			case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
+				return basicSetItemElement(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
-        return getTagImport();
-      case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
-        return getItemElement();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
+				return getTagImport();
+			case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
+				return getItemElement();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
-        setTagImport((TagImport)newValue);
-        return;
-      case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
-        setItemElement((ItemElement)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
+				setTagImport((TagImport)newValue);
+				return;
+			case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
+				setItemElement((ItemElement)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
-        setTagImport((TagImport)null);
-        return;
-      case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
-        setItemElement((ItemElement)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
+				setTagImport((TagImport)null);
+				return;
+			case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
+				setItemElement((ItemElement)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
-        return tagImport != null;
-      case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
-        return itemElement != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.DOMAINMODEL__TAG_IMPORT:
+				return tagImport != null;
+			case BlogPostDSLPackage.DOMAINMODEL__ITEM_ELEMENT:
+				return itemElement != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //DomainmodelImpl

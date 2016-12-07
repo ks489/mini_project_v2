@@ -31,144 +31,138 @@ import org.xtext.blogPostDSL.Tags;
 public class TagsImpl extends MinimalEObjectImpl.Container implements Tags
 {
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected Tag name;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TagsImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.TAGS;
-  }
+		return BlogPostDSLPackage.Literals.TAGS;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Tag getName()
   {
-    if (name != null && name.eIsProxy())
-    {
-      InternalEObject oldName = (InternalEObject)name;
-      name = (Tag)eResolveProxy(oldName);
-      if (name != oldName)
-      {
-        if (eNotificationRequired())
-          eNotify(new ENotificationImpl(this, Notification.RESOLVE, BlogPostDSLPackage.TAGS__NAME, oldName, name));
-      }
-    }
-    return name;
-  }
+		if (name != null && name.eIsProxy()) {
+			InternalEObject oldName = (InternalEObject)name;
+			name = (Tag)eResolveProxy(oldName);
+			if (name != oldName) {
+				if (eNotificationRequired())
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, BlogPostDSLPackage.TAGS__NAME, oldName, name));
+			}
+		}
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Tag basicGetName()
   {
-    return name;
-  }
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setName(Tag newName)
   {
-    Tag oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TAGS__NAME, oldName, name));
-  }
+		Tag oldName = name;
+		name = newName;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TAGS__NAME, oldName, name));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TAGS__NAME:
-        if (resolve) return getName();
-        return basicGetName();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TAGS__NAME:
+				if (resolve) return getName();
+				return basicGetName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TAGS__NAME:
-        setName((Tag)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TAGS__NAME:
+				setName((Tag)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TAGS__NAME:
-        setName((Tag)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TAGS__NAME:
+				setName((Tag)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TAGS__NAME:
-        return name != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TAGS__NAME:
+				return name != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TagsImpl

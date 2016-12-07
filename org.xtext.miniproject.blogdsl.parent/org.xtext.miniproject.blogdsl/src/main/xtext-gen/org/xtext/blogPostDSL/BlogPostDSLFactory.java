@@ -16,119 +16,119 @@ import org.eclipse.emf.ecore.EFactory;
 public interface BlogPostDSLFactory extends EFactory
 {
   /**
-   * The singleton instance of the factory.
-   * <!-- begin-user-doc -->
+	 * The singleton instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   BlogPostDSLFactory eINSTANCE = org.xtext.blogPostDSL.impl.BlogPostDSLFactoryImpl.init();
 
   /**
-   * Returns a new object of class '<em>Domainmodel</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Domainmodel</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Domainmodel</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Domainmodel</em>'.
+	 * @generated
+	 */
   Domainmodel createDomainmodel();
 
   /**
-   * Returns a new object of class '<em>Item Element</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Item Element</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Item Element</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Item Element</em>'.
+	 * @generated
+	 */
   ItemElement createItemElement();
 
   /**
-   * Returns a new object of class '<em>Blog</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Blog</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Blog</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Blog</em>'.
+	 * @generated
+	 */
   Blog createBlog();
 
   /**
-   * Returns a new object of class '<em>Article</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Article</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Article</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Article</em>'.
+	 * @generated
+	 */
   Article createArticle();
 
   /**
-   * Returns a new object of class '<em>Element Declaration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Element Declaration</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Element Declaration</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Element Declaration</em>'.
+	 * @generated
+	 */
   ElementDeclaration createElementDeclaration();
 
   /**
-   * Returns a new object of class '<em>Tag Import</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Tag Import</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Tag Import</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Tag Import</em>'.
+	 * @generated
+	 */
   TagImport createTagImport();
 
   /**
-   * Returns a new object of class '<em>Tag</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Tag</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Tag</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Tag</em>'.
+	 * @generated
+	 */
   Tag createTag();
 
   /**
-   * Returns a new object of class '<em>Title</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Title</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Title</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Title</em>'.
+	 * @generated
+	 */
   Title createTitle();
 
   /**
-   * Returns a new object of class '<em>Date</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Date</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Date</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Date</em>'.
+	 * @generated
+	 */
   Date createDate();
 
   /**
-   * Returns a new object of class '<em>Tags</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Tags</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Tags</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Tags</em>'.
+	 * @generated
+	 */
   Tags createTags();
 
   /**
-   * Returns a new object of class '<em>Title ID</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns a new object of class '<em>Title ID</em>'.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return a new object of class '<em>Title ID</em>'.
-   * @generated
-   */
+	 * @return a new object of class '<em>Title ID</em>'.
+	 * @generated
+	 */
   TitleID createTitleID();
 
   /**
-   * Returns the package supported by this factory.
-   * <!-- begin-user-doc -->
+	 * Returns the package supported by this factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the package supported by this factory.
-   * @generated
-   */
+	 * @return the package supported by this factory.
+	 * @generated
+	 */
   BlogPostDSLPackage getBlogPostDSLPackage();
 
 } //BlogPostDSLFactory

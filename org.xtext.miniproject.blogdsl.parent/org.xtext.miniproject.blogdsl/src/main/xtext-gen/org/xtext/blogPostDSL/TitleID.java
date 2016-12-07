@@ -26,19 +26,19 @@ import org.eclipse.emf.ecore.EObject;
 public interface TitleID extends EObject
 {
   /**
-   * Returns the value of the '<em><b>Titleid</b></em>' attribute list.
-   * The list contents are of type {@link java.lang.String}.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Titleid</b></em>' attribute list.
+	 * The list contents are of type {@link java.lang.String}.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Titleid</em>' attribute list isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Titleid</em>' attribute list.
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitleID_Titleid()
-   * @model unique="false"
-   * @generated
-   */
+	 * @return the value of the '<em>Titleid</em>' attribute list.
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitleID_Titleid()
+	 * @model unique="false"
+	 * @generated
+	 */
   EList<String> getTitleid();
 
 } // TitleID

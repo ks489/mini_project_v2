@@ -18,24 +18,24 @@ import org.xtext.blogPostDSL.BlogPostDSLPackage;
 public class BlogImpl extends ItemElementImpl implements Blog
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected BlogImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.BLOG;
-  }
+		return BlogPostDSLPackage.Literals.BLOG;
+	}
 
 } //BlogImpl

@@ -22,206 +22,202 @@ import org.xtext.blogPostDSL.*;
 public class BlogPostDSLFactoryImpl extends EFactoryImpl implements BlogPostDSLFactory
 {
   /**
-   * Creates the default factory implementation.
-   * <!-- begin-user-doc -->
+	 * Creates the default factory implementation.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public static BlogPostDSLFactory init()
   {
-    try
-    {
-      BlogPostDSLFactory theBlogPostDSLFactory = (BlogPostDSLFactory)EPackage.Registry.INSTANCE.getEFactory(BlogPostDSLPackage.eNS_URI);
-      if (theBlogPostDSLFactory != null)
-      {
-        return theBlogPostDSLFactory;
-      }
-    }
-    catch (Exception exception)
-    {
-      EcorePlugin.INSTANCE.log(exception);
-    }
-    return new BlogPostDSLFactoryImpl();
-  }
+		try {
+			BlogPostDSLFactory theBlogPostDSLFactory = (BlogPostDSLFactory)EPackage.Registry.INSTANCE.getEFactory(BlogPostDSLPackage.eNS_URI);
+			if (theBlogPostDSLFactory != null) {
+				return theBlogPostDSLFactory;
+			}
+		}
+		catch (Exception exception) {
+			EcorePlugin.INSTANCE.log(exception);
+		}
+		return new BlogPostDSLFactoryImpl();
+	}
 
   /**
-   * Creates an instance of the factory.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the factory.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public BlogPostDSLFactoryImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public EObject create(EClass eClass)
   {
-    switch (eClass.getClassifierID())
-    {
-      case BlogPostDSLPackage.DOMAINMODEL: return createDomainmodel();
-      case BlogPostDSLPackage.ITEM_ELEMENT: return createItemElement();
-      case BlogPostDSLPackage.BLOG: return createBlog();
-      case BlogPostDSLPackage.ARTICLE: return createArticle();
-      case BlogPostDSLPackage.ELEMENT_DECLARATION: return createElementDeclaration();
-      case BlogPostDSLPackage.TAG_IMPORT: return createTagImport();
-      case BlogPostDSLPackage.TAG: return createTag();
-      case BlogPostDSLPackage.TITLE: return createTitle();
-      case BlogPostDSLPackage.DATE: return createDate();
-      case BlogPostDSLPackage.TAGS: return createTags();
-      case BlogPostDSLPackage.TITLE_ID: return createTitleID();
-      default:
-        throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
-    }
-  }
+		switch (eClass.getClassifierID()) {
+			case BlogPostDSLPackage.DOMAINMODEL: return createDomainmodel();
+			case BlogPostDSLPackage.ITEM_ELEMENT: return createItemElement();
+			case BlogPostDSLPackage.BLOG: return createBlog();
+			case BlogPostDSLPackage.ARTICLE: return createArticle();
+			case BlogPostDSLPackage.ELEMENT_DECLARATION: return createElementDeclaration();
+			case BlogPostDSLPackage.TAG_IMPORT: return createTagImport();
+			case BlogPostDSLPackage.TAG: return createTag();
+			case BlogPostDSLPackage.TITLE: return createTitle();
+			case BlogPostDSLPackage.DATE: return createDate();
+			case BlogPostDSLPackage.TAGS: return createTags();
+			case BlogPostDSLPackage.TITLE_ID: return createTitleID();
+			default:
+				throw new IllegalArgumentException("The class '" + eClass.getName() + "' is not a valid classifier");
+		}
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Domainmodel createDomainmodel()
   {
-    DomainmodelImpl domainmodel = new DomainmodelImpl();
-    return domainmodel;
-  }
+		DomainmodelImpl domainmodel = new DomainmodelImpl();
+		return domainmodel;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ItemElement createItemElement()
   {
-    ItemElementImpl itemElement = new ItemElementImpl();
-    return itemElement;
-  }
+		ItemElementImpl itemElement = new ItemElementImpl();
+		return itemElement;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Blog createBlog()
   {
-    BlogImpl blog = new BlogImpl();
-    return blog;
-  }
+		BlogImpl blog = new BlogImpl();
+		return blog;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Article createArticle()
   {
-    ArticleImpl article = new ArticleImpl();
-    return article;
-  }
+		ArticleImpl article = new ArticleImpl();
+		return article;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public ElementDeclaration createElementDeclaration()
   {
-    ElementDeclarationImpl elementDeclaration = new ElementDeclarationImpl();
-    return elementDeclaration;
-  }
+		ElementDeclarationImpl elementDeclaration = new ElementDeclarationImpl();
+		return elementDeclaration;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TagImport createTagImport()
   {
-    TagImportImpl tagImport = new TagImportImpl();
-    return tagImport;
-  }
+		TagImportImpl tagImport = new TagImportImpl();
+		return tagImport;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Tag createTag()
   {
-    TagImpl tag = new TagImpl();
-    return tag;
-  }
+		TagImpl tag = new TagImpl();
+		return tag;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Title createTitle()
   {
-    TitleImpl title = new TitleImpl();
-    return title;
-  }
+		TitleImpl title = new TitleImpl();
+		return title;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Date createDate()
   {
-    DateImpl date = new DateImpl();
-    return date;
-  }
+		DateImpl date = new DateImpl();
+		return date;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Tags createTags()
   {
-    TagsImpl tags = new TagsImpl();
-    return tags;
-  }
+		TagsImpl tags = new TagsImpl();
+		return tags;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TitleID createTitleID()
   {
-    TitleIDImpl titleID = new TitleIDImpl();
-    return titleID;
-  }
+		TitleIDImpl titleID = new TitleIDImpl();
+		return titleID;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public BlogPostDSLPackage getBlogPostDSLPackage()
   {
-    return (BlogPostDSLPackage)getEPackage();
-  }
+		return (BlogPostDSLPackage)getEPackage();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @deprecated
-   * @generated
-   */
+	 * @deprecated
+	 * @generated
+	 */
   @Deprecated
   public static BlogPostDSLPackage getPackage()
   {
-    return BlogPostDSLPackage.eINSTANCE;
-  }
+		return BlogPostDSLPackage.eINSTANCE;
+	}
 
 } //BlogPostDSLFactoryImpl

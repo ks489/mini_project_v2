@@ -18,24 +18,24 @@ import org.xtext.blogPostDSL.BlogPostDSLPackage;
 public class ArticleImpl extends ItemElementImpl implements Article
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected ArticleImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.ARTICLE;
-  }
+		return BlogPostDSLPackage.Literals.ARTICLE;
+	}
 
 } //ArticleImpl

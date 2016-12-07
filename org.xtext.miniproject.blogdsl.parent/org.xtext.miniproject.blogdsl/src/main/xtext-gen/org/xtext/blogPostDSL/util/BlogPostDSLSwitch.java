@@ -26,329 +26,316 @@ import org.xtext.blogPostDSL.*;
 public class BlogPostDSLSwitch<T> extends Switch<T>
 {
   /**
-   * The cached model package
-   * <!-- begin-user-doc -->
+	 * The cached model package
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected static BlogPostDSLPackage modelPackage;
 
   /**
-   * Creates an instance of the switch.
-   * <!-- begin-user-doc -->
+	 * Creates an instance of the switch.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public BlogPostDSLSwitch()
   {
-    if (modelPackage == null)
-    {
-      modelPackage = BlogPostDSLPackage.eINSTANCE;
-    }
-  }
+		if (modelPackage == null) {
+			modelPackage = BlogPostDSLPackage.eINSTANCE;
+		}
+	}
 
   /**
-   * Checks whether this is a switch for the given package.
-   * <!-- begin-user-doc -->
+	 * Checks whether this is a switch for the given package.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param ePackage the package in question.
-   * @return whether this is a switch for the given package.
-   * @generated
-   */
+	 * @param ePackage the package in question.
+	 * @return whether this is a switch for the given package.
+	 * @generated
+	 */
   @Override
   protected boolean isSwitchFor(EPackage ePackage)
   {
-    return ePackage == modelPackage;
-  }
+		return ePackage == modelPackage;
+	}
 
   /**
-   * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
-   * <!-- begin-user-doc -->
+	 * Calls <code>caseXXX</code> for each class of the model until one returns a non null result; it yields that result.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @return the first non-null result returned by a <code>caseXXX</code> call.
-   * @generated
-   */
+	 * @return the first non-null result returned by a <code>caseXXX</code> call.
+	 * @generated
+	 */
   @Override
   protected T doSwitch(int classifierID, EObject theEObject)
   {
-    switch (classifierID)
-    {
-      case BlogPostDSLPackage.DOMAINMODEL:
-      {
-        Domainmodel domainmodel = (Domainmodel)theEObject;
-        T result = caseDomainmodel(domainmodel);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.ITEM_ELEMENT:
-      {
-        ItemElement itemElement = (ItemElement)theEObject;
-        T result = caseItemElement(itemElement);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.BLOG:
-      {
-        Blog blog = (Blog)theEObject;
-        T result = caseBlog(blog);
-        if (result == null) result = caseItemElement(blog);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.ARTICLE:
-      {
-        Article article = (Article)theEObject;
-        T result = caseArticle(article);
-        if (result == null) result = caseItemElement(article);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.ELEMENT_DECLARATION:
-      {
-        ElementDeclaration elementDeclaration = (ElementDeclaration)theEObject;
-        T result = caseElementDeclaration(elementDeclaration);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.TAG_IMPORT:
-      {
-        TagImport tagImport = (TagImport)theEObject;
-        T result = caseTagImport(tagImport);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.TAG:
-      {
-        Tag tag = (Tag)theEObject;
-        T result = caseTag(tag);
-        if (result == null) result = caseTagImport(tag);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.TITLE:
-      {
-        Title title = (Title)theEObject;
-        T result = caseTitle(title);
-        if (result == null) result = caseElementDeclaration(title);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.DATE:
-      {
-        Date date = (Date)theEObject;
-        T result = caseDate(date);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.TAGS:
-      {
-        Tags tags = (Tags)theEObject;
-        T result = caseTags(tags);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      case BlogPostDSLPackage.TITLE_ID:
-      {
-        TitleID titleID = (TitleID)theEObject;
-        T result = caseTitleID(titleID);
-        if (result == null) result = defaultCase(theEObject);
-        return result;
-      }
-      default: return defaultCase(theEObject);
-    }
-  }
+		switch (classifierID) {
+			case BlogPostDSLPackage.DOMAINMODEL: {
+				Domainmodel domainmodel = (Domainmodel)theEObject;
+				T result = caseDomainmodel(domainmodel);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.ITEM_ELEMENT: {
+				ItemElement itemElement = (ItemElement)theEObject;
+				T result = caseItemElement(itemElement);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.BLOG: {
+				Blog blog = (Blog)theEObject;
+				T result = caseBlog(blog);
+				if (result == null) result = caseItemElement(blog);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.ARTICLE: {
+				Article article = (Article)theEObject;
+				T result = caseArticle(article);
+				if (result == null) result = caseItemElement(article);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.ELEMENT_DECLARATION: {
+				ElementDeclaration elementDeclaration = (ElementDeclaration)theEObject;
+				T result = caseElementDeclaration(elementDeclaration);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.TAG_IMPORT: {
+				TagImport tagImport = (TagImport)theEObject;
+				T result = caseTagImport(tagImport);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.TAG: {
+				Tag tag = (Tag)theEObject;
+				T result = caseTag(tag);
+				if (result == null) result = caseTagImport(tag);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.TITLE: {
+				Title title = (Title)theEObject;
+				T result = caseTitle(title);
+				if (result == null) result = caseElementDeclaration(title);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.DATE: {
+				Date date = (Date)theEObject;
+				T result = caseDate(date);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.TAGS: {
+				Tags tags = (Tags)theEObject;
+				T result = caseTags(tags);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			case BlogPostDSLPackage.TITLE_ID: {
+				TitleID titleID = (TitleID)theEObject;
+				T result = caseTitleID(titleID);
+				if (result == null) result = defaultCase(theEObject);
+				return result;
+			}
+			default: return defaultCase(theEObject);
+		}
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Domainmodel</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Domainmodel</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Domainmodel</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Domainmodel</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseDomainmodel(Domainmodel object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Item Element</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Item Element</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Item Element</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Item Element</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseItemElement(ItemElement object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Blog</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Blog</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Blog</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Blog</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseBlog(Blog object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Article</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Article</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Article</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Article</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseArticle(Article object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Element Declaration</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Element Declaration</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Element Declaration</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Element Declaration</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseElementDeclaration(ElementDeclaration object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Tag Import</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Tag Import</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Tag Import</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tag Import</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseTagImport(TagImport object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Tag</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Tag</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Tag</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tag</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseTag(Tag object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Title</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Title</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Title</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Title</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseTitle(Title object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Date</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Date</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Date</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Date</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseDate(Date object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Tags</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Tags</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Tags</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Tags</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseTags(Tags object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>Title ID</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>Title ID</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>Title ID</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>Title ID</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject) doSwitch(EObject)
+	 * @generated
+	 */
   public T caseTitleID(TitleID object)
   {
-    return null;
-  }
+		return null;
+	}
 
   /**
-   * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
-   * <!-- begin-user-doc -->
+	 * Returns the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * <!-- begin-user-doc -->
    * This implementation returns null;
    * returning a non-null result will terminate the switch, but this is the last case anyway.
    * <!-- end-user-doc -->
-   * @param object the target of the switch.
-   * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
-   * @see #doSwitch(org.eclipse.emf.ecore.EObject)
-   * @generated
-   */
+	 * @param object the target of the switch.
+	 * @return the result of interpreting the object as an instance of '<em>EObject</em>'.
+	 * @see #doSwitch(org.eclipse.emf.ecore.EObject)
+	 * @generated
+	 */
   @Override
   public T defaultCase(EObject object)
   {
-    return null;
-  }
+		return null;
+	}
 
 } //BlogPostDSLSwitch

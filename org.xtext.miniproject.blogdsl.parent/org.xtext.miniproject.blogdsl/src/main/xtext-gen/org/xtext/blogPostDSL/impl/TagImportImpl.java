@@ -20,24 +20,24 @@ import org.xtext.blogPostDSL.TagImport;
 public class TagImportImpl extends MinimalEObjectImpl.Container implements TagImport
 {
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TagImportImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.TAG_IMPORT;
-  }
+		return BlogPostDSLPackage.Literals.TAG_IMPORT;
+	}
 
 } //TagImportImpl

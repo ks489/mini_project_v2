@@ -3,12 +3,15 @@
  */
 package org.xtext.generator
 
+
 import org.eclipse.emf.ecore.resource.Resource
 import org.eclipse.xtext.generator.AbstractGenerator
 import org.eclipse.xtext.generator.IFileSystemAccess2
 import org.eclipse.xtext.generator.IGeneratorContext
 import org.eclipse.xtext.naming.IQualifiedNameProvider
 import com.google.inject.Inject
+import java.text.SimpleDateFormat
+import java.util.Date
 
 /**
  * Generates code from your model files on save.
@@ -19,10 +22,39 @@ class BlogPostDSLGenerator extends AbstractGenerator {
 	
 	@Inject extension IQualifiedNameProvider
 	
-	def compile() ''' 
-        «IF 1 != 1»
-
+	Date now
+	
+	SimpleDateFormat dateFormatter
+	
+	def getShortDate(){
+		now = new Date();
+		dateFormatter = new SimpleDateFormat("yyyy-MM-dd");
+		return dateFormatter.format(now)
+	}
+	
+	def getLongDate(){
+		now = new Date();
+		dateFormatter = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss-04:00");
+		return dateFormatter.format(now)
+	}
+	
+	def compile(ItemElement ie) '''
+			--- 
+        «IF ie.eContainer.fullyQualifiedName != null»
+			layout: post
+			title: «IF ie.eContainer.fullyQualifiedName != null»«ie.Title»«ENDIF»
+			categories: «IF ie.eContainer.fullyQualifiedName != null»«ie.Title»«ENDIF»
+			excerpt:
+			tags: [«FOR t : Tags»
+					«t»,
+					«ENDFOR»
+				   ]
+			image: 
+			feature:
+			date: «IF ie.eContainer.fullyQualifiedName != null»«ie.Date»«ENDIF»«IF ie.eContainer.fullyQualifiedName == null»«getDate»«ENDIF»
+			modified:
         «ENDIF»
+        	---
     '''
 	
 	override afterGenerate(Resource input, IFileSystemAccess2 fsa, IGeneratorContext context) {
@@ -33,10 +65,22 @@ class BlogPostDSLGenerator extends AbstractGenerator {
 //		throw new UnsupportedOperationException("TODO: auto-generated method stub")
 	}
 	override void doGenerate(Resource resource, IFileSystemAccess2 fsa, IGeneratorContext context) {
+		for (e : resource.allContents.toIterable.filter(ItemElement)) {
+            fsa.generateFile(
+                getShortDate + e.fullyQualifiedName.toString("/") + ".md",
+                e.compile)
+        }
+        
 //		fsa.generateFile('greetings.txt', 'People to greet: ' + 
 //			resource.allContents
 //				.filter(typeof(Greeting))
 //				.map[name]
 //				.join(', '))
+	}
+}
+
+class extensionMethods{
+	def static bottles(int i){
+		
 	}
 }

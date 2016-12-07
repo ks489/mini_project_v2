@@ -25,81 +25,81 @@ package org.xtext.blogPostDSL;
 public interface Title extends ElementDeclaration
 {
   /**
-   * Returns the value of the '<em><b>Date</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Date</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Date</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Date</em>' containment reference.
-   * @see #setDate(Date)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Date()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Date</em>' containment reference.
+	 * @see #setDate(Date)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Date()
+	 * @model containment="true"
+	 * @generated
+	 */
   Date getDate();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getDate <em>Date</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getDate <em>Date</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Date</em>' containment reference.
-   * @see #getDate()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Date</em>' containment reference.
+	 * @see #getDate()
+	 * @generated
+	 */
   void setDate(Date value);
 
   /**
-   * Returns the value of the '<em><b>Tag</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Tag</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Tag</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Tag</em>' containment reference.
-   * @see #setTag(Tags)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Tag()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Tag</em>' containment reference.
+	 * @see #setTag(Tags)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Tag()
+	 * @model containment="true"
+	 * @generated
+	 */
   Tags getTag();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getTag <em>Tag</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getTag <em>Tag</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Tag</em>' containment reference.
-   * @see #getTag()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Tag</em>' containment reference.
+	 * @see #getTag()
+	 * @generated
+	 */
   void setTag(Tags value);
 
   /**
-   * Returns the value of the '<em><b>Name</b></em>' containment reference.
-   * <!-- begin-user-doc -->
+	 * Returns the value of the '<em><b>Name</b></em>' containment reference.
+	 * <!-- begin-user-doc -->
    * <p>
    * If the meaning of the '<em>Name</em>' containment reference isn't clear,
    * there really should be more of a description here...
    * </p>
    * <!-- end-user-doc -->
-   * @return the value of the '<em>Name</em>' containment reference.
-   * @see #setName(TitleID)
-   * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Name()
-   * @model containment="true"
-   * @generated
-   */
+	 * @return the value of the '<em>Name</em>' containment reference.
+	 * @see #setName(TitleID)
+	 * @see org.xtext.blogPostDSL.BlogPostDSLPackage#getTitle_Name()
+	 * @model containment="true"
+	 * @generated
+	 */
   TitleID getName();
 
   /**
-   * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getName <em>Name</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * Sets the value of the '{@link org.xtext.blogPostDSL.Title#getName <em>Name</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @param value the new value of the '<em>Name</em>' containment reference.
-   * @see #getName()
-   * @generated
-   */
+	 * @param value the new value of the '<em>Name</em>' containment reference.
+	 * @see #getName()
+	 * @generated
+	 */
   void setName(TitleID value);
 
 } // Title

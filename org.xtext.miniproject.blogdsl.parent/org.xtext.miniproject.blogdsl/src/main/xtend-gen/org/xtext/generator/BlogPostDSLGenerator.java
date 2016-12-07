@@ -4,8 +4,9 @@
 package org.xtext.generator;
 
 import com.google.inject.Inject;
+import java.text.SimpleDateFormat;
+import java.util.Date;
 import org.eclipse.emf.ecore.resource.Resource;
-import org.eclipse.xtend2.lib.StringConcatenation;
 import org.eclipse.xtext.generator.AbstractGenerator;
 import org.eclipse.xtext.generator.IFileSystemAccess2;
 import org.eclipse.xtext.generator.IGeneratorContext;
@@ -23,25 +24,59 @@ public class BlogPostDSLGenerator extends AbstractGenerator {
   @Extension
   private IQualifiedNameProvider _iQualifiedNameProvider;
   
-  public CharSequence compile() {
-    StringConcatenation _builder = new StringConcatenation();
-    _builder.append("�IF 1 != 1�");
-    _builder.newLine();
-    _builder.newLine();
-    _builder.append("�ENDIF�");
-    _builder.newLine();
-    return _builder;
+  private Date now;
+  
+  private SimpleDateFormat dateFormatter;
+  
+  public String getShortDate() {
+    Date _date = new Date();
+    this.now = _date;
+    SimpleDateFormat _simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd");
+    this.dateFormatter = _simpleDateFormat;
+    return this.dateFormatter.format(this.now);
   }
   
-  @Override
+  public String getLongDate() {
+    Date _date = new Date();
+    this.now = _date;
+    SimpleDateFormat _simpleDateFormat = new SimpleDateFormat("yyyy-MM-dd hh:mm:ss-04:00");
+    this.dateFormatter = _simpleDateFormat;
+    return this.dateFormatter.format(this.now);
+  }
+  
+  public CharSequence compile(final /* ItemElement */Object ie) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field Tags is undefined"
+      + "\nThe method or field getDate is undefined"
+      + "\neContainer cannot be resolved"
+      + "\nfullyQualifiedName cannot be resolved"
+      + "\n!= cannot be resolved"
+      + "\neContainer cannot be resolved"
+      + "\nfullyQualifiedName cannot be resolved"
+      + "\n!= cannot be resolved"
+      + "\nTitle cannot be resolved"
+      + "\neContainer cannot be resolved"
+      + "\nfullyQualifiedName cannot be resolved"
+      + "\n!= cannot be resolved"
+      + "\nTitle cannot be resolved"
+      + "\neContainer cannot be resolved"
+      + "\nfullyQualifiedName cannot be resolved"
+      + "\n!= cannot be resolved"
+      + "\nDate cannot be resolved"
+      + "\neContainer cannot be resolved"
+      + "\nfullyQualifiedName cannot be resolved"
+      + "\n== cannot be resolved");
+  }
+  
   public void afterGenerate(final Resource input, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
   }
   
-  @Override
   public void beforeGenerate(final Resource input, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
   }
   
-  @Override
   public void doGenerate(final Resource resource, final IFileSystemAccess2 fsa, final IGeneratorContext context) {
+    throw new Error("Unresolved compilation problems:"
+      + "\nThe method or field ItemElement is undefined"
+      + "\nThe method compile(ItemElement) from the type BlogPostDSLGenerator refers to the missing type ItemElement");
   }
 }

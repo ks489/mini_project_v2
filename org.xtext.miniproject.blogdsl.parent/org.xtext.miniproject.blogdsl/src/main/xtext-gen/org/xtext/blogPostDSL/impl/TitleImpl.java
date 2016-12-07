@@ -35,304 +35,293 @@ import org.xtext.blogPostDSL.TitleID;
 public class TitleImpl extends ElementDeclarationImpl implements Title
 {
   /**
-   * The cached value of the '{@link #getDate() <em>Date</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getDate() <em>Date</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getDate()
-   * @generated
-   * @ordered
-   */
+	 * @see #getDate()
+	 * @generated
+	 * @ordered
+	 */
   protected Date date;
 
   /**
-   * The cached value of the '{@link #getTag() <em>Tag</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getTag() <em>Tag</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getTag()
-   * @generated
-   * @ordered
-   */
+	 * @see #getTag()
+	 * @generated
+	 * @ordered
+	 */
   protected Tags tag;
 
   /**
-   * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
-   * <!-- begin-user-doc -->
+	 * The cached value of the '{@link #getName() <em>Name</em>}' containment reference.
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @see #getName()
-   * @generated
-   * @ordered
-   */
+	 * @see #getName()
+	 * @generated
+	 * @ordered
+	 */
   protected TitleID name;
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   protected TitleImpl()
   {
-    super();
-  }
+		super();
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   protected EClass eStaticClass()
   {
-    return BlogPostDSLPackage.Literals.TITLE;
-  }
+		return BlogPostDSLPackage.Literals.TITLE;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Date getDate()
   {
-    return date;
-  }
+		return date;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetDate(Date newDate, NotificationChain msgs)
   {
-    Date oldDate = date;
-    date = newDate;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__DATE, oldDate, newDate);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		Date oldDate = date;
+		date = newDate;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__DATE, oldDate, newDate);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setDate(Date newDate)
   {
-    if (newDate != date)
-    {
-      NotificationChain msgs = null;
-      if (date != null)
-        msgs = ((InternalEObject)date).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__DATE, null, msgs);
-      if (newDate != null)
-        msgs = ((InternalEObject)newDate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__DATE, null, msgs);
-      msgs = basicSetDate(newDate, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__DATE, newDate, newDate));
-  }
+		if (newDate != date) {
+			NotificationChain msgs = null;
+			if (date != null)
+				msgs = ((InternalEObject)date).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__DATE, null, msgs);
+			if (newDate != null)
+				msgs = ((InternalEObject)newDate).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__DATE, null, msgs);
+			msgs = basicSetDate(newDate, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__DATE, newDate, newDate));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public Tags getTag()
   {
-    return tag;
-  }
+		return tag;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetTag(Tags newTag, NotificationChain msgs)
   {
-    Tags oldTag = tag;
-    tag = newTag;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__TAG, oldTag, newTag);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		Tags oldTag = tag;
+		tag = newTag;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__TAG, oldTag, newTag);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setTag(Tags newTag)
   {
-    if (newTag != tag)
-    {
-      NotificationChain msgs = null;
-      if (tag != null)
-        msgs = ((InternalEObject)tag).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__TAG, null, msgs);
-      if (newTag != null)
-        msgs = ((InternalEObject)newTag).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__TAG, null, msgs);
-      msgs = basicSetTag(newTag, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__TAG, newTag, newTag));
-  }
+		if (newTag != tag) {
+			NotificationChain msgs = null;
+			if (tag != null)
+				msgs = ((InternalEObject)tag).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__TAG, null, msgs);
+			if (newTag != null)
+				msgs = ((InternalEObject)newTag).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__TAG, null, msgs);
+			msgs = basicSetTag(newTag, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__TAG, newTag, newTag));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public TitleID getName()
   {
-    return name;
-  }
+		return name;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public NotificationChain basicSetName(TitleID newName, NotificationChain msgs)
   {
-    TitleID oldName = name;
-    name = newName;
-    if (eNotificationRequired())
-    {
-      ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__NAME, oldName, newName);
-      if (msgs == null) msgs = notification; else msgs.add(notification);
-    }
-    return msgs;
-  }
+		TitleID oldName = name;
+		name = newName;
+		if (eNotificationRequired()) {
+			ENotificationImpl notification = new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__NAME, oldName, newName);
+			if (msgs == null) msgs = notification; else msgs.add(notification);
+		}
+		return msgs;
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   public void setName(TitleID newName)
   {
-    if (newName != name)
-    {
-      NotificationChain msgs = null;
-      if (name != null)
-        msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__NAME, null, msgs);
-      if (newName != null)
-        msgs = ((InternalEObject)newName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__NAME, null, msgs);
-      msgs = basicSetName(newName, msgs);
-      if (msgs != null) msgs.dispatch();
-    }
-    else if (eNotificationRequired())
-      eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__NAME, newName, newName));
-  }
+		if (newName != name) {
+			NotificationChain msgs = null;
+			if (name != null)
+				msgs = ((InternalEObject)name).eInverseRemove(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__NAME, null, msgs);
+			if (newName != null)
+				msgs = ((InternalEObject)newName).eInverseAdd(this, EOPPOSITE_FEATURE_BASE - BlogPostDSLPackage.TITLE__NAME, null, msgs);
+			msgs = basicSetName(newName, msgs);
+			if (msgs != null) msgs.dispatch();
+		}
+		else if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, BlogPostDSLPackage.TITLE__NAME, newName, newName));
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE__DATE:
-        return basicSetDate(null, msgs);
-      case BlogPostDSLPackage.TITLE__TAG:
-        return basicSetTag(null, msgs);
-      case BlogPostDSLPackage.TITLE__NAME:
-        return basicSetName(null, msgs);
-    }
-    return super.eInverseRemove(otherEnd, featureID, msgs);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE__DATE:
+				return basicSetDate(null, msgs);
+			case BlogPostDSLPackage.TITLE__TAG:
+				return basicSetTag(null, msgs);
+			case BlogPostDSLPackage.TITLE__NAME:
+				return basicSetName(null, msgs);
+		}
+		return super.eInverseRemove(otherEnd, featureID, msgs);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public Object eGet(int featureID, boolean resolve, boolean coreType)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE__DATE:
-        return getDate();
-      case BlogPostDSLPackage.TITLE__TAG:
-        return getTag();
-      case BlogPostDSLPackage.TITLE__NAME:
-        return getName();
-    }
-    return super.eGet(featureID, resolve, coreType);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE__DATE:
+				return getDate();
+			case BlogPostDSLPackage.TITLE__TAG:
+				return getTag();
+			case BlogPostDSLPackage.TITLE__NAME:
+				return getName();
+		}
+		return super.eGet(featureID, resolve, coreType);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eSet(int featureID, Object newValue)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE__DATE:
-        setDate((Date)newValue);
-        return;
-      case BlogPostDSLPackage.TITLE__TAG:
-        setTag((Tags)newValue);
-        return;
-      case BlogPostDSLPackage.TITLE__NAME:
-        setName((TitleID)newValue);
-        return;
-    }
-    super.eSet(featureID, newValue);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE__DATE:
+				setDate((Date)newValue);
+				return;
+			case BlogPostDSLPackage.TITLE__TAG:
+				setTag((Tags)newValue);
+				return;
+			case BlogPostDSLPackage.TITLE__NAME:
+				setName((TitleID)newValue);
+				return;
+		}
+		super.eSet(featureID, newValue);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public void eUnset(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE__DATE:
-        setDate((Date)null);
-        return;
-      case BlogPostDSLPackage.TITLE__TAG:
-        setTag((Tags)null);
-        return;
-      case BlogPostDSLPackage.TITLE__NAME:
-        setName((TitleID)null);
-        return;
-    }
-    super.eUnset(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE__DATE:
+				setDate((Date)null);
+				return;
+			case BlogPostDSLPackage.TITLE__TAG:
+				setTag((Tags)null);
+				return;
+			case BlogPostDSLPackage.TITLE__NAME:
+				setName((TitleID)null);
+				return;
+		}
+		super.eUnset(featureID);
+	}
 
   /**
-   * <!-- begin-user-doc -->
+	 * <!-- begin-user-doc -->
    * <!-- end-user-doc -->
-   * @generated
-   */
+	 * @generated
+	 */
   @Override
   public boolean eIsSet(int featureID)
   {
-    switch (featureID)
-    {
-      case BlogPostDSLPackage.TITLE__DATE:
-        return date != null;
-      case BlogPostDSLPackage.TITLE__TAG:
-        return tag != null;
-      case BlogPostDSLPackage.TITLE__NAME:
-        return name != null;
-    }
-    return super.eIsSet(featureID);
-  }
+		switch (featureID) {
+			case BlogPostDSLPackage.TITLE__DATE:
+				return date != null;
+			case BlogPostDSLPackage.TITLE__TAG:
+				return tag != null;
+			case BlogPostDSLPackage.TITLE__NAME:
+				return name != null;
+		}
+		return super.eIsSet(featureID);
+	}
 
 } //TitleImpl
