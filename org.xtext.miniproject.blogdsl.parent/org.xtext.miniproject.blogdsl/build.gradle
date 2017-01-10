@@ -43,15 +43,15 @@ task compileModel(dependsOn: 'classes', type: JavaExec) {
 //def destinationDirectory = ""
 
 task publish(dependsOn: [compileModel]) {
-	//def sourceDirectory = "src-gen"
-	//def destinationDirectory = "website/jekyll-website/_posts/blog"
+	def sourceDirectory = "src-gen"
+	def destinationDirectory = "website/jekyll-website/_posts/blog"
 	
-	def sourceDirectory = ""
-	def destinationDirectory = "testmove"
+	//def sourceDirectory = ""
+	//def destinationDirectory = "testmove"
 	
 	FileTree tree = fileTree(dir: '.')
 
-	tree.include '*/*' + title + '.md'
+	//tree.include '*/*' + title + '.md'
 	def count = 0
 	tree.each {File localfile ->  
 		copy {
