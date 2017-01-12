@@ -2,14 +2,6 @@ grammar org.xtext.BlogPostDSL with org.eclipse.xtext.common.Terminals
 
 generate blogPostDSL "http://www.xtext.org/BlogPostDSL"
 
-//Model:
-//	greetings+=Greeting*;
-	
-//Greeting:
-//	'Hello' name=ID '!!';
-
-//Domainmodel:
-	//(tagImport = TagImport)* (itemElement = Article)+ (itemElement = Blog)+;
 
 Domainmodel:
 	(tagImport = TagImport)* (itemElement = ItemElement)+;
@@ -49,11 +41,6 @@ TitleID:
 	titleid+=(ALPHANUMERIC)+
 ;
 
-/*terminal ALPHANUMERICDASH:	
-		('-')ALPHANUMERIC+;
-		
-terminal ALPHANUMBERICNODASH:
-	ALPHANUMERIC; */
 	
 terminal ALPHANUMERIC:
 		('0'..'9' | 'A'..'Z' | 'a'..'z')+('-')('0'..'9' | 'A'..'Z' | 'a'..'z')+;

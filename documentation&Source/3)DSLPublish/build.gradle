@@ -1,0 +1,68 @@
+dependencies {
+	testCompile "org.eclipse.xtext:org.eclipse.xtext.junit4:${xtextVersion}"
+	testCompile "org.eclipse.xtext:org.eclipse.xtext.xbase.junit:${xtextVersion}"
+	compile "org.eclipse.xtext:org.eclipse.xtext:${xtextVersion}"
+	compile "org.eclipse.xtext:org.eclipse.xtext.xbase:${xtextVersion}"
+}
+configurations {
+	mwe2 {
+		extendsFrom compile
+	}
+}
+
+dependencies {
+	mwe2 "org.eclipse.emf:org.eclipse.emf.mwe2.launch:2.8.3"
+	mwe2 "org.eclipse.xtext:org.eclipse.xtext.xtext.generator:${xtextVersion}"
+}
+
+task generateXtextLanguage(type: JavaExec) {
+	main = 'org.eclipse.emf.mwe2.launch.runtime.Mwe2Launcher'
+	classpath = configurations.mwe2
+	inputs.file "src/main/java/org/xtext/GenerateBlogDSL.mwe2"
+	inputs.file "src/main/java/org/xtext/BlogDSL.xtext"
+	outputs.dir "src/main/xtext-gen"
+	args += "src/main/java/org/xtext/GenerateBlogDSL.mwe2"
+	args += "-p"
+	args += "rootPath=/${projectDir}/.."
+}
+
+generateXtext.dependsOn(generateXtextLanguage)
+clean.dependsOn(cleanGenerateXtextLanguage)
+eclipse.classpath.plusConfigurations += [configurations.mwe2]
+
+// generating code
+// ../gradlew compileModel -Pmodel=build/test.dmodel
+task compileModel(dependsOn: 'classes', type: JavaExec) {
+	main = 'org.example.domainmodel.generator.Main'
+	//main = 'org.xtext.miniproject/blogdsl.domainmodel.generator.Main'	
+	classpath = sourceSets.main.runtimeClasspath
+	args model
+}
+
+//def sourceDirectory = ""
+//def destinationDirectory = ""
+
+task publish(dependsOn: [compileModel]) {
+	def sourceDirectory = "src-gen"
+	def destinationDirectory = "website/jekyll-website/_posts/blog"
+	
+	//def sourceDirectory = ""
+	//def destinationDirectory = "testmove"
+	
+	FileTree tree = fileTree(dir: '.')
+
+	//tree.include '*/*' + title + '.md'
+	def count = 0
+	tree.each {File localfile ->  
+		copy {
+	        from '.' + sourceDirectory
+	        into './' + destinationDirectory
+	        include { details -> details.file.name.endsWith('.md') && details.file.name.contains(localfile.name) }
+	        doLast{
+		    	println "the file " + sourceDirectory + '/' + localfile.name + " from the project " + project.name + " is deleted"
+		    	println "a new file " + destinationDirectory + '/' + localfile.name + " is created with the contents of " + sourceDirectory + '/' + localfile.name	
+	    	}
+	    } 
+	} 
+}
+
